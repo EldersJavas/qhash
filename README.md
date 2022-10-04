@@ -7,17 +7,35 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/EldersJavas/qhash)](https://goreportcard.com/report/github.com/EldersJavas/qhash)
 
 
-get hash &amp; SHA quickly
+get hash quickly.
 
 ---
-# Install
+# package
+## Get
+```bash
+go get github.com/EldersJavas/qhash
+```
+## Usage
+```go
+package main
+import (
+	"fmt"
+	"github.com/EldersJavas/qhash"
+)
+func main()  {
+	fmt.Println(qhash.MD5([]byte("Hello world!")))
+}
+```
+
+# cmd
+## Install
 
 ```bash
-go install github.com/EldersJavas/qhash@latest
+go install github.com/EldersJavas/qhash/cmd@latest
 ```
 
 
-# Usage
+## Usage
 
 ```bash
 Quick Hash
